@@ -83,6 +83,15 @@ body.noscroll {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'DM Serif Display', serif;
   font-weight: 400;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 2.875rem;
+}
+
+p {
+  line-height: 1.5;
 }
 
 .container {
@@ -91,8 +100,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container--px {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+@media (min-width: 64em) {
+  .container--px {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 .flex {
@@ -121,10 +137,7 @@ h1, h2, h3, h4, h5, h6 {
 
 button, .button {
   display: inline-block;
-  color: #2d2640;
-  border: #2d2640 solid 2px;
   padding: 0.5625rem 1.9375rem;
-  background-color: white;
   font-family: 'Karla', sans-serif;
   font-weight: 400;
   font-size: 1rem;
@@ -135,6 +148,18 @@ button, .button {
 
 button:hover, .button:hover {
   color: #fafafa;
+  background-color: #2d2640;
+}
+
+.button-light {
+  color: #2d2640;
+  border: #2d2640 solid 2px;
+  background-color: white;
+}
+
+.button-dark {
+  color: #fafafa;
+  border: #fafafa solid 2px;
   background-color: #2d2640;
 }
 
@@ -241,5 +266,48 @@ button:hover, .button:hover {
   width: 80%;
   padding: 1rem;
   border: 1px solid #fafafa;
+  background-color: #2b272f;
+}
+
+.hero {
+  background-color: #2d2640;
+}
+
+.hero__imageMobile {
+  width: 100%;
+  height: auto;
+  z-index: 2;
+}
+
+.hero__mobileBgLeft {
+  position: absolute;
+  z-index: 1;
+}
+
+.hero__mobileBgRight {
+  position: absolute;
+  z-index: 1;
+}
+
+.hero__text {
+  position: relative;
+  color: #fafafa;
+  height: 31.25rem;
+  z-index: 2;
+}
+
+.hero__text h1 {
+  margin-top: 6.875rem;
+  margin-bottom: 1.85rem;
+}
+
+.hero__text p {
+  margin-bottom: 2.375rem;
+}
+
+@media (max-width: 63.9375em) {
+  .hero__text {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

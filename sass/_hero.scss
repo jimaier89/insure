@@ -1,0 +1,48 @@
+.hero {
+    background-color: $darkViolet;
+
+    &__imageMobile {
+        width: 100%;
+        height: auto;
+        z-index: 2;
+    }
+
+    &imageDesktop {
+
+    }
+
+    &__mobileBgLeft {
+        position: absolute;
+        z-index: 1;
+    }
+
+    &__mobileBgRight {
+        position: absolute;
+        z-index: 1;
+    }
+
+    &__desktopBG {
+
+    }
+
+    &__text {
+        position: relative;
+        color: $veryLightGray;
+        height: 31.25rem;
+        z-index: 2;
+
+        h1 {
+            margin-top: 6.875rem;
+            margin-bottom: 1.85rem;
+        }
+
+        p {
+            margin-bottom: 2.375rem;
+        }
+
+        @include breakpoint-down(medium) {
+            text-align: center;
+        }
+
+    }
+}

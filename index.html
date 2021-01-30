@@ -18,6 +18,7 @@
   <header class="header">
 
     <nav class="container container--px flex flex-jc-sb flex-ai-c">
+
       <a href="#" class="header__logo">
         <img src="./images/logo.svg" alt="Insure" />
       </a>
@@ -30,13 +31,12 @@
 
       <div class="header__links hide-for-mobile">
         <a href="#">HOW WE WORK</a><a href="#">BLOG</a><a href="#">ACCOUNT</a>
-        <a href="#"><button type="button">VIEW PLANS</button></a>
+        <a href="#"><button class="button-light" type="button">VIEW PLANS</button></a>
       </div>
 
     </nav>
 
-
-    <div class="header__menu flex has-fade">
+    <div class="header__menu hide-for-desktop flex has-fade">
       <a href="#">HOW WE WORK</a>
       <a href="#">BLOG</a>
       <a href="#">ACCOUNT</a>
@@ -48,6 +48,34 @@
 
   </header>
 
+  <section class="hero">
+
+    <img class="hero__imageMobile hide-for-desktop" src="./images/image-intro-mobile.jpg " alt="family">
+    <img class="hero__imageDesktop hide-for-mobile" src="./images/image-intro-desktop.jpg" alt="family" >
+
+    <img src="./images/bg-pattern-intro-left-mobile.svg" class="hero__mobileBgLeft hide-for-desktop" >
+    <img src="./images/bg-pattern-intro-right-mobile.svg" class="hero__mobileBgRight hide-for-desktop">
+    <img src="./images/bg-pattern-intro-left-desktop.svg" class="hero__desktopBgLeft hide-for-mobile">
+    <img src="./images/bg-pattern-intro-right-desktop.svg" class="hero__desktopBgRight hide-for-mobile">
+    
+
+    <div class="hero__text container--px">
+
+      
+
+      <h1>Humanizing your insurance.</h1>
+
+      <p>Get your life insurance coverage easier and faster. We blend our expertise 
+        and technology to help you find the plan that’s right for you. Ensure you 
+        and your loved ones are protected.
+      </p>
+
+      <a href="#"><button class="button-dark" type="button">VIEW PLANS</button></a>
+
+    </div>
+
+  </section>
+
 <!--
 
   
@@ -55,11 +83,9 @@
   
   
 
-  Humanizing your insurance.
+  
 
-  Get your life insurance coverage easier and faster. We blend our expertise 
-  and technology to help you find the plan that’s right for you. Ensure you 
-  and your loved ones are protected.
+  
 
   View plans
 
