@@ -1,10 +1,13 @@
 .hero {
+    position: relative;
     background-color: $darkViolet;
 
     &__imageMobile {
+        position: relative;
         width: 100%;
         height: auto;
         z-index: 2;
+        min-width: 18.75rem;
     }
 
     &imageDesktop {
@@ -14,11 +17,16 @@
     &__mobileBgLeft {
         position: absolute;
         z-index: 1;
-    }
+        top: -7.1875rem;
+        left: 0px;
+        
+    }    
 
     &__mobileBgRight {
         position: absolute;
         z-index: 1;
+        right: 0%;
+        top: 85%;   
     }
 
     &__desktopBG {

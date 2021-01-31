@@ -98,7 +98,7 @@ button, .button {
 
 //Visibility
 .hide-for-mobile {
-    @include breakpoint-down(medium) {
+    @include breakpoint-down(large) {
         display: none;
     }
 }

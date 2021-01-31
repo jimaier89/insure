@@ -163,7 +163,7 @@ button:hover, .button:hover {
   background-color: #2d2640;
 }
 
-@media (max-width: 63.9375em) {
+@media (max-width: 87.4375em) {
   .hide-for-mobile {
     display: none;
   }
@@ -193,7 +193,7 @@ button:hover, .button:hover {
 
 .header nav {
   position: relative;
-  z-index: 1;
+  z-index: 5;
   height: 5rem;
   background-color: white;
 }
@@ -232,7 +232,7 @@ button:hover, .button:hover {
 
 .header__menu {
   position: absolute;
-  z-index: 0;
+  z-index: 4;
   width: 100%;
   background-color: #2b272f;
   background-image: url("/insure/images/bg-pattern-mobile-nav.svg");
@@ -270,23 +270,30 @@ button:hover, .button:hover {
 }
 
 .hero {
+  position: relative;
   background-color: #2d2640;
 }
 
 .hero__imageMobile {
+  position: relative;
   width: 100%;
   height: auto;
   z-index: 2;
+  min-width: 18.75rem;
 }
 
 .hero__mobileBgLeft {
   position: absolute;
   z-index: 1;
+  top: -7.1875rem;
+  left: 0px;
 }
 
 .hero__mobileBgRight {
   position: absolute;
   z-index: 1;
+  right: 0%;
+  top: 85%;
 }
 
 .hero__text {
