@@ -1,55 +1,78 @@
 .hero {
-    position: relative;
-    background-color: $darkViolet;
+    min-width: 23.125rem;
+
+    &__wrapper {
+        height: 62.375rem;
+        position: relative;
+        background-color: $darkViolet;
+
+        @include breakpoint-up(medium) {
+            display: flex;
+            
+            
+        }
+    }
 
     &__imageMobile {
         position: relative;
         width: 100%;
         height: auto;
         z-index: 2;
-        min-width: 18.75rem;
     }
 
-    &imageDesktop {
-
-    }
-
-    &__mobileBgLeft {
+    &__mobileLeft {
         position: absolute;
-        z-index: 1;
-        top: -7.1875rem;
-        left: 0px;
-        
-    }    
+        left: -2%;
+        top: 43%;
+        width: 57%;
 
-    &__mobileBgRight {
+
+    }
+
+    &__mobileRight {
         position: absolute;
-        z-index: 1;
-        right: 0%;
-        top: 85%;   
+        right: 0;
+        top: 85%
+    
     }
 
-    &__desktopBG {
+    &__imageDesktop {
 
     }
 
-    &__text {
-        position: relative;
+    &__desktopRight {
+
+    }
+
+    &__desktopLeft {
+
+    }
+
+    &__textContainer {
+        position: absolute;
         color: $veryLightGray;
-        height: 31.25rem;
-        z-index: 2;
+        text-align: center;
+
+        span {
+
+        }
 
         h1 {
-            margin-top: 6.875rem;
-            margin-bottom: 1.85rem;
+            margin-top: 6.5rem;
+            margin-bottom: 2rem;
         }
 
         p {
-            margin-bottom: 2.375rem;
+            opacity: 0.85;
+            margin-bottom: 2.25rem;
         }
 
-        @include breakpoint-down(medium) {
-            text-align: center;
+        button {
+            opacity: 0.85;
+        }
+
+        @include breakpoint-up(medium) {
+
         }
 
     }
