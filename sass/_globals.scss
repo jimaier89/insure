@@ -115,5 +115,11 @@ button, .button {
     }
 }
 
+.hide-only-mobile {
+    @include breakpoint-down(small) {
+        display: none;
+    }
+}
+
 
 

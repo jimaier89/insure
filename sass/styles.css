@@ -181,6 +181,18 @@ button:hover, .button:hover {
   }
 }
 
+@media (max-width: 39.9385em) {
+  .hide-only-mobile {
+    display: none;
+  }
+}
+
+.header {
+  background-color: white;
+  position: relative;
+  z-index: 3;
+}
+
 .header.open .header__toggle > span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -202,6 +214,11 @@ button:hover, .button:hover {
   z-index: 5;
   height: 5rem;
   background-color: white;
+}
+
+.header__links {
+  position: absolute;
+  right: 0;
 }
 
 .header__links a {
@@ -275,6 +292,10 @@ button:hover, .button:hover {
   background-color: #2b272f;
 }
 
+.hero {
+  min-width: 23.125rem;
+}
+
 .hero__wrapper {
   height: 62.375rem;
   position: relative;
@@ -283,16 +304,17 @@ button:hover, .button:hover {
 
 @media (min-width: 40em) {
   .hero__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    height: 600px;
   }
 }
 
 .hero__imageMobile {
   position: relative;
   width: 100%;
-  min-width: 23.125rem;
   height: auto;
   z-index: 2;
 }
@@ -308,6 +330,24 @@ button:hover, .button:hover {
   position: absolute;
   right: 0;
   top: 85%;
+}
+
+.hero__imageDesktop {
+  position: absolute;
+  top: 17%;
+  right: 0;
+}
+
+.hero__desktopRight {
+  position: absolute;
+  z-index: 2;
+  right: 0%;
+  top: -12%;
+}
+
+.hero__desktopLeft {
+  position: absolute;
+  top: 60%;
 }
 
 .hero__textContainer {
@@ -328,5 +368,31 @@ button:hover, .button:hover {
 
 .hero__textContainer button {
   opacity: 0.85;
+}
+
+.hero__desktopTextContainer {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 98%;
+  color: #fafafa;
+}
+
+.hero__desktopTextContainer span {
+  content: "";
+  background-color: white;
+  height: 13px;
+  display: block;
+  width: 20%;
+  margin-top: 172px;
+}
+
+.hero__desktopTextContainer .textBox {
+  width: 50%;
+}
+
+.hero__desktopTextContainer .imageBox {
+  width: 50%;
+  position: relative;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -7,8 +7,9 @@
         background-color: $darkViolet;
 
         @include breakpoint-up(medium) {
-            display: flex;
-            
+            display: inline-flex;
+            width: 100%;
+            height: 600px;
             
         }
     }
@@ -25,26 +26,32 @@
         left: -2%;
         top: 43%;
         width: 57%;
-
-
     }
 
     &__mobileRight {
         position: absolute;
         right: 0;
         top: 85%
-    
     }
 
     &__imageDesktop {
-
+        position: absolute;
+        top: 17%;
+        right: 0;
+        
     }
 
     &__desktopRight {
+        position: absolute;
+        z-index: 2;
+        right: 0%;
+        top: -12%;
 
     }
 
     &__desktopLeft {
+        position: absolute;
+        top: 60%;
 
     }
 
@@ -52,10 +59,6 @@
         position: absolute;
         color: $veryLightGray;
         text-align: center;
-
-        span {
-
-        }
 
         h1 {
             margin-top: 6.5rem;
@@ -70,10 +73,31 @@
         button {
             opacity: 0.85;
         }
+    }
 
-        @include breakpoint-up(medium) {
+    &__desktopTextContainer {
+        display: inline-flex;
+        width: 98%;
+        color: $veryLightGray;
 
+
+        span {
+            content: "";
+            background-color: white;
+            height: 13px;
+            display: block;
+            width: 20%;
+            margin-top: 172px;
         }
 
+        .textBox {
+            width: 50%;
+            
+        }
+
+        .imageBox {
+            width: 50%;
+            position: relative;
+        }   
     }
 }

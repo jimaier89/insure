@@ -1,4 +1,7 @@
 .header {
+    background-color: white;
+    position: relative;
+    z-index: 3;
 
     &.open {
 
@@ -27,6 +30,8 @@
     }
 
     &__links {
+        position: absolute;
+        right: 0;
         
         a {
             text-decoration: none;
