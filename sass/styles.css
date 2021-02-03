@@ -95,7 +95,7 @@ p {
 }
 
 .container {
-  max-width: 90rem;
+  max-width: 70rem;
   margin: 0 auto;
 }
 
@@ -146,21 +146,26 @@ button, .button {
   transition: all 100ms ease-in-out;
 }
 
-button:hover, .button:hover {
-  color: #fafafa;
-  background-color: #2d2640;
-}
-
 .button-light {
   color: #2d2640;
   border: #2d2640 solid 2px;
   background-color: white;
 }
 
+.button-light:hover {
+  color: #fafafa;
+  background-color: #2d2640;
+}
+
 .button-dark {
   color: #fafafa;
   border: #fafafa solid 2px;
   background-color: #2d2640;
+}
+
+.button-dark:hover {
+  color: #2d2640;
+  background-color: #fafafa;
 }
 
 @media (max-width: 87.4375em) {
@@ -336,6 +341,11 @@ button:hover, .button:hover {
   position: absolute;
   top: 17%;
   right: 0;
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.397);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.397);
+  border-radius: 3px;
 }
 
 .hero__desktopRight {
@@ -381,10 +391,20 @@ button:hover, .button:hover {
 .hero__desktopTextContainer span {
   content: "";
   background-color: white;
-  height: 13px;
+  height: 2px;
   display: block;
-  width: 20%;
-  margin-top: 172px;
+  width: 12.5rem;
+  margin-top: 7rem;
+  margin-bottom: 4.6875rem;
+}
+
+.hero__desktopTextContainer h1 {
+  margin-bottom: 2.5rem;
+}
+
+.hero__desktopTextContainer p {
+  width: 95%;
+  margin-bottom: 2.25rem;
 }
 
 .hero__desktopTextContainer .textBox {

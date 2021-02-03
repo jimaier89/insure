@@ -36,7 +36,7 @@ p {
 
 //Spacing
 .container {
-    max-width: 90rem;
+    max-width: 70rem;
     margin: 0 auto;
     
     &--px {
@@ -78,22 +78,29 @@ button, .button {
     cursor: pointer;
     transition: all 100ms ease-in-out;
 
-    &:hover {
-        color: $veryLightGray;
-        background-color: $darkViolet;
-    }
+    
 }
 
 .button-light {
     color: $darkViolet;
     border: $darkViolet solid 2px;
     background-color: white;
+
+    &:hover {
+        color: $veryLightGray;
+        background-color: $darkViolet;
+    }
 }
 
 .button-dark {
     color: $veryLightGray;
     border: $veryLightGray solid 2px;
     background-color: $darkViolet;
+
+    &:hover {
+        color: $darkViolet;
+        background-color: $veryLightGray;
+    }
 }
 
 //Visibility
