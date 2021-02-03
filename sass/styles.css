@@ -348,6 +348,12 @@ button, .button {
   border-radius: 3px;
 }
 
+@media only screen and (max-width: 900px) {
+  .hero__imageDesktop {
+    z-index: 3;
+  }
+}
+
 .hero__desktopRight {
   position: absolute;
   z-index: 2;
@@ -408,7 +414,9 @@ button, .button {
 }
 
 .hero__desktopTextContainer .textBox {
+  position: relative;
   width: 50%;
+  z-index: 2;
 }
 
 .hero__desktopTextContainer .imageBox {

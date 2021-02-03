@@ -42,6 +42,10 @@
         height: auto;
         box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.397);
         border-radius: 3px;
+
+        @media only screen and (max-width: 900px) {
+            z-index: 3;
+        }
         
     }
 
@@ -105,7 +109,9 @@
         }
 
         .textBox {
+            position: relative;
             width: 50%;
+            z-index: 2;
             
         }
 
