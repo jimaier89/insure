@@ -1,0 +1,50 @@
+.features {
+
+    &__intro {
+        
+        span {
+            content: "";
+            display: block;
+            width: 9.375rem;
+            height: 1px;
+            background-color: $darkViolet;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 8.75rem;
+            margin-bottom: 3.125rem;
+        }
+
+        h1 {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 5.4375rem;
+
+        }
+    }
+
+    &__grid {
+        
+
+        .feature {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            //height: 243px;
+
+            .icon {
+                margin-bottom: 40px;
+
+            }
+
+            h3 {
+                font-size: 21px;
+                margin-bottom: 33px;
+
+            }
+
+            p {
+
+            }
+        }
+    }
+}

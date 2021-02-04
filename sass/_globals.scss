@@ -95,7 +95,7 @@ button, .button {
 .button-dark {
     color: $veryLightGray;
     border: $veryLightGray solid 2px;
-    background-color: $darkViolet;
+    background: none;
 
     &:hover {
         color: $darkViolet;

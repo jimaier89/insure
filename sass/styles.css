@@ -160,7 +160,7 @@ button, .button {
 .button-dark {
   color: #fafafa;
   border: #fafafa solid 2px;
-  background-color: #2d2640;
+  background: none;
 }
 
 .button-dark:hover {
@@ -422,5 +422,45 @@ button, .button {
 .hero__desktopTextContainer .imageBox {
   width: 50%;
   position: relative;
+}
+
+.features__intro span {
+  content: "";
+  display: block;
+  width: 9.375rem;
+  height: 1px;
+  background-color: #2d2640;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 8.75rem;
+  margin-bottom: 3.125rem;
+}
+
+.features__intro h1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5.4375rem;
+}
+
+.features__grid .feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features__grid .feature .icon {
+  margin-bottom: 40px;
+}
+
+.features__grid .feature h3 {
+  font-size: 21px;
+  margin-bottom: 33px;
 }
 /*# sourceMappingURL=styles.css.map */
