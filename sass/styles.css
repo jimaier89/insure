@@ -397,9 +397,9 @@ button, .button {
 .hero__desktopTextContainer span {
   content: "";
   background-color: white;
-  height: 2px;
+  height: 1px;
   display: block;
-  width: 12.5rem;
+  width: 10.5rem;
   margin-top: 7rem;
   margin-bottom: 4.6875rem;
 }
@@ -411,6 +411,7 @@ button, .button {
 .hero__desktopTextContainer p {
   width: 95%;
   margin-bottom: 2.25rem;
+  padding-right: 2rem;
 }
 
 .hero__desktopTextContainer .textBox {
@@ -430,16 +431,40 @@ button, .button {
   width: 9.375rem;
   height: 1px;
   background-color: #2d2640;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 8.75rem;
-  margin-bottom: 3.125rem;
+  margin: 8.75rem auto 3.125rem auto;
+}
+
+@media (min-width: 64em) {
+  .features__intro span {
+    margin-left: 0;
+    margin-top: 306px;
+    width: 7.875rem;
+    background-color: #95a9c6;
+  }
 }
 
 .features__intro h1 {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5.4375rem;
+  text-align: center;
+  margin: 0 auto 3.4375rem auto;
+}
+
+@media (min-width: 64em) {
+  .features__intro h1 {
+    text-align: left;
+    font-size: 51px;
+    margin-bottom: 105px;
+  }
+}
+
+@media (min-width: 64em) {
+  .features__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 3.125rem;
+            column-gap: 3.125rem;
+  }
 }
 
 .features__grid .feature {
@@ -450,17 +475,55 @@ button, .button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .features__grid .feature .icon {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
+  width: 5.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (min-width: 64em) {
+  .features__grid .feature .icon {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
 }
 
 .features__grid .feature h3 {
-  font-size: 21px;
-  margin-bottom: 33px;
+  font-size: 1.625em;
+  margin-top: 0px;
+  margin-bottom: 2.0625rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (min-width: 64em) {
+  .features__grid .feature h3 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
+.features__grid .feature p {
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 4rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  opacity: 0.45;
+}
+
+@media (min-width: 64em) {
+  .features__grid .feature p {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
