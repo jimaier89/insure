@@ -1,0 +1,35 @@
+.moreInfo {
+    background-color: white;
+    position: relative;
+
+    &__container {
+        background-color: $darkViolet;
+        width: 85%;
+        margin: auto;
+        flex-direction: column;
+        position: relative;
+        height: 341px;
+
+
+        h2 {
+            color: $veryLightGray;
+            font-size: 38px;
+            text-align: center;
+            z-index: 2;
+            margin-top: 71px;
+        }
+
+        a {
+            z-index: 2;
+        }
+
+
+    }
+
+    &__imageMobile {
+        position: absolute;
+        right: 0;
+    }
+
+
+}
