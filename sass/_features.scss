@@ -1,6 +1,16 @@
 .features {
     margin-bottom: 4.375rem;
 
+    &__container {
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+
+        @include breakpoint-up(medium) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
     &__intro {
         
         span {

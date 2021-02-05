@@ -4,19 +4,33 @@
 
     &__container {
         background-color: $darkViolet;
-        width: 85%;
-        margin: auto;
+        margin-left: 1.75rem;
+        margin-right: 1.75rem;
         flex-direction: column;
         position: relative;
-        height: 341px;
+        height: 21.3125rem;
+
+        @include breakpoint-up(medium) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        
 
 
         h2 {
-            color: $veryLightGray;
-            font-size: 38px;
+            color: white;
+            font-size: 2.375em;
             text-align: center;
             z-index: 2;
-            margin-top: 71px;
+            margin-top: 4.4rem;
+            margin-bottom: 2.4rem;
+
+            @include breakpoint-up(large) {
+                position: absolute;
+                
+                
+            }
         }
 
         a {

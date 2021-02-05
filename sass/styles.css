@@ -219,6 +219,14 @@ button, .button {
   z-index: 5;
   height: 5rem;
   background-color: white;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+@media (min-width: 40em) {
+  .header nav {
+    padding: 0;
+  }
 }
 
 .header__links {
@@ -229,9 +237,12 @@ button, .button {
 .header__links a {
   text-decoration: none;
   color: #837d87;
-  margin-right: 1.5rem;
   -webkit-transition: color 100ms ease-in-out;
   transition: color 100ms ease-in-out;
+}
+
+.header__links a:not(:last-child) {
+  margin-right: 1.5rem;
 }
 
 .header__links a:hover {
@@ -429,6 +440,18 @@ button, .button {
   margin-bottom: 4.375rem;
 }
 
+.features__container {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+@media (min-width: 40em) {
+  .features__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .features__intro span {
   content: "";
   display: block;
@@ -538,22 +561,36 @@ button, .button {
 
 .moreInfo__container {
   background-color: #2d2640;
-  width: 85%;
-  margin: auto;
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  height: 341px;
+  height: 21.3125rem;
+}
+
+@media (min-width: 40em) {
+  .moreInfo__container {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .moreInfo__container h2 {
-  color: #fafafa;
-  font-size: 38px;
+  color: white;
+  font-size: 2.375em;
   text-align: center;
   z-index: 2;
-  margin-top: 71px;
+  margin-top: 4.4rem;
+  margin-bottom: 2.4rem;
+}
+
+@media (min-width: 64em) {
+  .moreInfo__container h2 {
+    position: absolute;
+  }
 }
 
 .moreInfo__container a {
