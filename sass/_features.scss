@@ -84,9 +84,14 @@
                 text-align: center;
                 opacity: 0.45;
 
+                @include breakpoint-up(medium) {
+                    width: 40%
+                }
+
                 @include breakpoint-up(large) {
                     align-self: flex-start;
                     text-align: left;
+                    width: 100%;
                 }
             }
         }

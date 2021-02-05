@@ -223,7 +223,7 @@ button, .button {
   padding-right: 1.75rem;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .header nav {
     padding: 0;
   }
@@ -361,7 +361,7 @@ button, .button {
 
 @media only screen and (max-width: 900px) {
   .hero__imageDesktop {
-    z-index: 3;
+    z-index: 2;
   }
 }
 
@@ -403,6 +403,11 @@ button, .button {
   display: inline-flex;
   width: 98%;
   color: #fafafa;
+  /* @include breakpoint-down(medium) {
+            padding-left: 28px;
+            top: -63px;
+            width: 71%;
+        } */
 }
 
 .hero__desktopTextContainer span {
@@ -434,6 +439,15 @@ button, .button {
 .hero__desktopTextContainer .imageBox {
   width: 50%;
   position: relative;
+}
+
+@media (max-width: 63.9375em) {
+  .hero__desktopTextContainer .imageBox {
+    width: 50%;
+    position: relative;
+    top: 29%;
+    right: 4%;
+  }
 }
 
 .features {
@@ -546,17 +560,25 @@ button, .button {
   opacity: 0.45;
 }
 
+@media (min-width: 40em) {
+  .features__grid .feature p {
+    width: 40%;
+  }
+}
+
 @media (min-width: 64em) {
   .features__grid .feature p {
     -ms-flex-item-align: start;
         align-self: flex-start;
     text-align: left;
+    width: 100%;
   }
 }
 
 .moreInfo {
   background-color: white;
   position: relative;
+  margin-bottom: 9.4rem;
 }
 
 .moreInfo__container {
@@ -573,8 +595,15 @@ button, .button {
 
 @media (min-width: 40em) {
   .moreInfo__container {
+    height: 15.6rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .moreInfo__container {
     margin-left: auto;
     margin-right: auto;
+    height: 15.6rem;
   }
 }
 
@@ -590,6 +619,10 @@ button, .button {
 @media (min-width: 64em) {
   .moreInfo__container h2 {
     position: absolute;
+    left: 5.2rem;
+    font-size: 3.3em;
+    width: 42%;
+    text-align: left;
   }
 }
 
@@ -597,7 +630,20 @@ button, .button {
   z-index: 2;
 }
 
+@media (min-width: 64em) {
+  .moreInfo__container a {
+    position: absolute;
+    right: 5.2rem;
+    top: 43%;
+  }
+}
+
 .moreInfo__imageMobile {
+  position: absolute;
+  right: 0;
+}
+
+.moreInfo__imageDesktop {
   position: absolute;
   right: 0;
 }

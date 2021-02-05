@@ -30,7 +30,7 @@
         padding-left: 1.75rem;
         padding-right: 1.75rem;
 
-        @include breakpoint-up(medium) {
+        @include breakpoint-up(large) {
             padding: 0;
         }
     }

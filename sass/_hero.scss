@@ -10,7 +10,6 @@
             display: inline-flex;
             width: 100%;
             height: 600px;
-            
         }
     }
 
@@ -44,8 +43,10 @@
         border-radius: 3px;
 
         @media only screen and (max-width: 900px) {
-            z-index: 3;
+            z-index: 2;
         }
+
+        
         
     }
 
@@ -88,6 +89,12 @@
         width: 98%;
         color: $veryLightGray;
 
+        /* @include breakpoint-down(medium) {
+            padding-left: 28px;
+            top: -63px;
+            width: 71%;
+        } */
+
 
         span {
             content: "";
@@ -113,12 +120,27 @@
             position: relative;
             width: 50%;
             z-index: 2;
+
+            @include breakpoint-down(medium) {
+                //width: 50%;
+                z-index: 2;
+                top: 50px;
+                left: 3%;
+            }
             
         }
 
         .imageBox {
             width: 50%;
             position: relative;
+
+            @include breakpoint-down(medium) {
+                width: 44%;
+                position: relative;
+                top: 29%;
+                right: -2%;
+            }
+            }
         }   
     }
 }

@@ -1,6 +1,7 @@
 .moreInfo {
     background-color: white;
     position: relative;
+    margin-bottom: 9.4rem;
 
     &__container {
         background-color: $darkViolet;
@@ -11,8 +12,13 @@
         height: 21.3125rem;
 
         @include breakpoint-up(medium) {
+            height: 15.6rem;
+        }
+
+        @include breakpoint-up(large) {
             margin-left: auto;
             margin-right: auto;
+            height: 15.6rem;
         }
 
         
@@ -28,19 +34,32 @@
 
             @include breakpoint-up(large) {
                 position: absolute;
-                
-                
+                left: 5.2rem;
+                font-size: 3.3em;
+                width: 42%;
+                text-align: left;
             }
         }
 
         a {
             z-index: 2;
+
+            @include breakpoint-up(large) {
+                position: absolute;
+                right: 5.2rem;
+                top: 43%;
+            }
         }
 
 
     }
 
     &__imageMobile {
+        position: absolute;
+        right: 0;
+    }
+
+    &__imageDesktop {
         position: absolute;
         right: 0;
     }
