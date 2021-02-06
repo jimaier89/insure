@@ -436,6 +436,14 @@ button, .button {
   z-index: 2;
 }
 
+@media (max-width: 63.9375em) {
+  .hero__desktopTextContainer .textBox {
+    z-index: 2;
+    top: -71px;
+    left: 3%;
+  }
+}
+
 .hero__desktopTextContainer .imageBox {
   width: 50%;
   position: relative;
@@ -443,10 +451,10 @@ button, .button {
 
 @media (max-width: 63.9375em) {
   .hero__desktopTextContainer .imageBox {
-    width: 50%;
+    width: 44%;
     position: relative;
     top: 29%;
-    right: 4%;
+    right: -2%;
   }
 }
 
