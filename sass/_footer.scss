@@ -16,7 +16,7 @@
         @include breakpoint-up(medium) {
             display: flex;
             justify-content: space-between;
-            width: 87%;
+            width: 75%;
             position: absolute;
             top: 3.4rem;
         }
@@ -46,7 +46,7 @@
         display: block;
         content: "";
         height: 1px;
-        width: 88%;
+        width: 75%;
         background-color: $grayishBlue;
         margin: 1.6rem auto 1.6rem auto;
         opacity: 0.45;
@@ -68,7 +68,7 @@
             margin-right: auto;
             position: relative;
             top: -84px;
-            width: 88%;
+            width: 75%;
         }
         
         
