@@ -274,7 +274,7 @@ button, .button {
   z-index: 4;
   width: 100%;
   background-color: #2b272f;
-  background-image: url("/insure/images/bg-pattern-mobile-nav.svg");
+  background-image: url("../dist/images/bg-pattern-mobile-nav.svg");
   background-repeat: no-repeat;
   background-position: 0px 85%;
   background-size: contain;
@@ -509,7 +509,7 @@ button, .button {
   .features__grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: repeat(3, 1fr);
         grid-template-columns: repeat(3, 1fr);
     -webkit-column-gap: 3.125rem;
             column-gap: 3.125rem;
